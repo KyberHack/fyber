@@ -14,13 +14,14 @@
   .empty-message {
     font-size: 18px;
     margin: 50px auto;
+    text-align: center;
   }
 
   .cart-items {
     height: 240px;
     display: flex;
     flex-direction: column;
-    overflow: scroll;
+    overflow: auto;
   }
 
   button {
