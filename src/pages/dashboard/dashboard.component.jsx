@@ -2,9 +2,8 @@ import React from "react";
 import "./dashboard.styles.scss";
 import web3 from "../../web3/web3";
 import getBalance from "../../web3/balance";
-
-const DAI_TOKEN_ADDRESS = "0xad6d458402f60fd3bd25163575031acdce07538d";
-const KNC_TOKEN_ADDRESS = "0x4e470dc7321e84ca96fcaedd0c8abcebbaeb68c6";
+import Header from "../../components/header/header.component";
+import { DAI_TOKEN_ADDRESS, KNC_TOKEN_ADDRESS } from "../../web3/address";
 
 class Dashboard extends React.Component {
   state = { account: null, eth: null, dai: null, knc: null, errorMessage: "" };
@@ -37,7 +36,8 @@ class Dashboard extends React.Component {
     const { account, eth, dai, knc, errorMessage } = this.state;
     if (errorMessage) return <h2>{errorMessage}</h2>;
     return (
-      <div>
+      <div className="main-container">
+        <Header />
         <h1>Dashboard</h1>
         <h2>{account}</h2>
         <h3>{eth} ETH</h3>

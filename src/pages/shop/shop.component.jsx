@@ -5,8 +5,10 @@ import { Route, Switch } from "react-router-dom";
 import CollectionPage from "../collection/collection.component";
 import CollectionDetailsPage from "../../components/collection-details/collection-details.component";
 import HomePage from "../homepage/homepage.component";
+import Header from "../../components/header/header.component";
 const ShopPage = ({ match }) => (
-  <div className="shop-page">
+  <div className="shop-page main-container">
+    <Header />
     <Switch>
       <Route exact path={`${match.path}`} component={HomePage} />
       <Route

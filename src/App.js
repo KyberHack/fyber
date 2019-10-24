@@ -12,7 +12,7 @@ import CheckoutPage from "./pages/checkout/checkout.component";
 import LandingPage from "./pages/landing-page/landing-page.component";
 import Dashboard from "./pages/dashboard/dashboard.component";
 
-import Header from "./components/header/header.component";
+// import Header from "./components/header/header.component";
 
 import { auth, createUserProfileDocument } from "./firebase/firebase.utils";
 
@@ -48,7 +48,6 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <Header />
         <Switch>
           <Route exact path="/" component={LandingPage} />
           <Route exact path="/dashboard" component={Dashboard} />
