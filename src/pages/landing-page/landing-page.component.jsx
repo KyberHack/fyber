@@ -79,23 +79,6 @@ const LandingPage = () => (
                   <p className="section-paragraph">
                     You can buy/sell in any token, swaps powered by Kyber network
                   </p>
-                  <div className="features-image">
-                    <img
-                      className="features-illustration"
-                      src={featuresIllustrationLight}
-                      alt="Feature illustration"
-                    />
-                    <img
-                      className="features-box"
-                      src={featuresBoxLight}
-                      alt="Feature box"
-                    />
-                    <img
-                      className="features-illustration"
-                      src={featuresIllustrationTopLight}
-                      alt="Feature illustration top"
-                    />
-                  </div>
                 </div>
               </div>
               <div className="features-wrap">
