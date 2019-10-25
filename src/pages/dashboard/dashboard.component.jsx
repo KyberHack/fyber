@@ -4,7 +4,8 @@ import web3 from "../../web3/web3";
 import getBalance from "../../web3/balance";
 import Header from "../../components/header/header.component";
 import { DAI_TOKEN_ADDRESS, KNC_TOKEN_ADDRESS } from "../../web3/address";
-
+import CustomButton from "../../components/custom-button/custom-button.component";
+import heromediadark from "../../assets/landing-page/images/hero-media-dark.svg";
 class Dashboard extends React.Component {
   state = { account: null, eth: null, dai: null, knc: null, errorMessage: "" };
   componentDidMount() {
@@ -34,15 +35,43 @@ class Dashboard extends React.Component {
   }
   render() {
     const { account, eth, dai, knc, errorMessage } = this.state;
-    if (errorMessage) return <h2>{errorMessage}</h2>;
+    if (errorMessage)
+      return (
+        <div className="main-container">
+          <Header />
+          <h2>{errorMessage}</h2>;
+        </div>
+      );
     return (
       <div className="main-container">
         <Header />
-        <h1>Dashboard</h1>
-        <h2>{account}</h2>
-        <h3>{eth} ETH</h3>
-        <h3>{dai} DAI</h3>
-        <h3>{knc} KNC</h3>
+        <h1 className="center">Dashboard</h1>
+        <h3 className="center">{account}</h3>
+        <div className="card-container">
+          <div className="card">
+            <h3>{eth ? `${eth} ETH` : "0 ETH"}</h3>
+          </div>
+          <div className="card">
+            <h3>{dai ? `${dai} DAI` : "0 DAI"}</h3>
+          </div>
+          <div className="card">
+            <h3>{knc ? `${knc} KNC` : "0 KNC"}</h3>
+          </div>
+        </div>
+        <div className="depositbtn">
+          <CustomButton>Deposit earnings into compound</CustomButton>
+        </div>
+        <section className="cta section">
+          <div className="container-sm">
+            <div className="cta-inner section-inner">
+              <div className="cta-header text-center">
+                <p className="section-paragraph">
+                  Powered by Kyber, Compound and Status
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     );
   }

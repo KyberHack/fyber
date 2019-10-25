@@ -5,6 +5,7 @@
   "private": true,
   "dependencies": {
     "bignumber.js": "^9.0.0",
+    "ethereumjs-tx": "^2.1.1",
     "firebase": "6.0.2",
     "modali": "^1.2.0",
     "node-sass": "4.12.0",

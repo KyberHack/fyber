@@ -36,7 +36,8 @@ const LandingPage = () => (
               <div className="hero-copy">
                 <h1 className="hero-title mt-0">Welcome To Fyber</h1>
                 <p className="hero-paragraph">
-                  Decentralised marketplace to buy, sell and lend goods powered by Kyber and Compound
+                  Decentralised marketplace to buy, sell and lend goods powered
+                  by Kyber and Compound
                 </p>
                 <div className="hero-cta">
                   <Link to="/shop" className="button button-primary">
@@ -77,7 +78,8 @@ const LandingPage = () => (
                 <div className="container-sm">
                   <h2 className="section-title mt-0">The Platform</h2>
                   <p className="section-paragraph">
-                    You can buy/sell in any token, swaps powered by Kyber network
+                    You can buy/sell in any token, swaps powered by Kyber
+                    network
                   </p>
                 </div>
               </div>
@@ -90,8 +92,9 @@ const LandingPage = () => (
                     <div className="feature-content">
                       <h3 className="feature-title mt-0">Borrow/Lend</h3>
                       <p className="text-sm mb-0">
-                        Borrow using compound, you pay security deposit along with borrow fee, if you return 
-                        item you get to own all your deposit otherwise it's liquidated
+                        Borrow using compound, you pay security deposit along
+                        with borrow fee, if you return item you get to own all
+                        your deposit otherwise it's liquidated
                       </p>
                     </div>
                   </div>
@@ -104,8 +107,9 @@ const LandingPage = () => (
                     <div className="feature-content">
                       <h3 className="feature-title mt-0">Fyber Extras</h3>
                       <p className="text-sm mb-0">
-                        We split interest earned on deposit 50/50 to both buyer and seller if he/she returns 
-                        the item, if not seller keeps all the interest+deposit
+                        We split interest earned on deposit 50/50 to both buyer
+                        and seller if he/she returns the item, if not seller
+                        keeps all the interest+deposit
                       </p>
                     </div>
                   </div>
@@ -116,9 +120,9 @@ const LandingPage = () => (
                       <img src={features03Light} alt="Feature 03" />
                     </div>
                     <div className="feature-content">
-                      <h3 className="feature-title mt-0">Support us</h3>
+                      <h3 className="feature-title mt-0">Private Messenger</h3>
                       <p className="text-sm mb-0">
-                        Support Fyber devs to create a truely decentralized platform
+                        Fyber uses Status to allow users to chat and negotiate
                       </p>
                     </div>
                   </div>
