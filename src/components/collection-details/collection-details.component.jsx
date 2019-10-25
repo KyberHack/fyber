@@ -7,6 +7,7 @@ import { selectCollectionById } from "../../redux/shop/shop.selectors";
 import executeKyberSwap from "../../web3/kyberswap";
 import getBalance from "../../web3/balance";
 import { KNC_TOKEN_ADDRESS } from "../../web3/address";
+import imgS from '../../assets/status.png';
 
 class CollectionDetails extends React.Component {
   state = { account: null, knc: null, errorMessage: "" };
@@ -51,6 +52,11 @@ class CollectionDetails extends React.Component {
           </CustomButton>
           <CustomButton onClick={() => console.log("borrow")}>
             Borrow using Compound
+          </CustomButton>
+          <h3>Send shipping address securly using status, you need to have status installed, scan QR code after you pay</h3>
+          <h4><img src={imgS}/></h4>
+          <CustomButton onClick={() => console.log("dispute")}>
+            Raise a dispute
           </CustomButton>
         </div>
       </div>

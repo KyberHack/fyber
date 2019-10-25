@@ -36,8 +36,7 @@ const LandingPage = () => (
               <div className="hero-copy">
                 <h1 className="hero-title mt-0">Welcome To Fyber</h1>
                 <p className="hero-paragraph">
-                  This is some dummy text. Please change this text according to
-                  your needs.
+                  Decentralised marketplace to buy, sell and lend goods powered by Kyber and Compound
                 </p>
                 <div className="hero-cta">
                   <Link to="/shop" className="button button-primary">
@@ -78,8 +77,7 @@ const LandingPage = () => (
                 <div className="container-sm">
                   <h2 className="section-title mt-0">The Platform</h2>
                   <p className="section-paragraph">
-                    Lorem ipsum is common placeholder text used to demonstrate
-                    the graphic elements of a document or visual presentation.
+                    You can buy/sell in any token, swaps powered by Kyber network
                   </p>
                   <div className="features-image">
                     <img
@@ -107,11 +105,10 @@ const LandingPage = () => (
                       <img src={features01Light} alt="Feature 01" />
                     </div>
                     <div className="feature-content">
-                      <h3 className="feature-title mt-0">Discover</h3>
+                      <h3 className="feature-title mt-0">Borrow/Lend</h3>
                       <p className="text-sm mb-0">
-                        Lorem ipsum dolor sit amet, consecte adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua dui.
+                        Borrow using compound, you pay security deposit along with borrow fee, if you return 
+                        item you get to own all your deposit otherwise it's liquidated
                       </p>
                     </div>
                   </div>
@@ -122,11 +119,10 @@ const LandingPage = () => (
                       <img src={features02Light} alt="Feature 02" />
                     </div>
                     <div className="feature-content">
-                      <h3 className="feature-title mt-0">Discover</h3>
+                      <h3 className="feature-title mt-0">Fyber Extras</h3>
                       <p className="text-sm mb-0">
-                        Lorem ipsum dolor sit amet, consecte adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua dui.
+                        We split interest earned on deposit 50/50 to both buyer and seller if he/she returns 
+                        the item, if not seller keeps all the interest+deposit
                       </p>
                     </div>
                   </div>
@@ -137,11 +133,9 @@ const LandingPage = () => (
                       <img src={features03Light} alt="Feature 03" />
                     </div>
                     <div className="feature-content">
-                      <h3 className="feature-title mt-0">Discover</h3>
+                      <h3 className="feature-title mt-0">Support us</h3>
                       <p className="text-sm mb-0">
-                        Lorem ipsum dolor sit amet, consecte adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua dui.
+                        Support Fyber devs to create a truely decentralized platform
                       </p>
                     </div>
                   </div>
@@ -156,8 +150,7 @@ const LandingPage = () => (
               <div className="cta-header text-center">
                 <h2 className="section-title mt-0">Start Using Fyber Now</h2>
                 <p className="section-paragraph">
-                  Lorem ipsum is common placeholder text used to demonstrate the
-                  graphic elements of a document or visual presentation.
+                  Powered by Kyber, Compound and Status
                 </p>
                 <div className="cta-cta">
                   <Link to="/shop" className="button button-primary" href="#">
