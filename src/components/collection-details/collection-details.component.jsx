@@ -50,6 +50,9 @@ class CollectionDetails extends React.Component {
           <CustomButton onClick={() => executeKyberSwap(account)} inverted>
             Buy Now
           </CustomButton>
+          <h5>Lend fees: {price/4} {token}</h5>
+          <h5>Security Deposit: {price} {token}</h5>
+          <h6>You will get your entire security deposit back if you return the product</h6>
           <CustomButton onClick={() => console.log("borrow")}>
             Borrow using Compound
           </CustomButton>
