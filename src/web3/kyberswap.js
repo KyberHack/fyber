@@ -2,8 +2,9 @@ import { ERC20_ABI, KYBER_NETWORK_PROXY_ABI } from "./abi";
 import { KYBER_NETWORK_PROXY_ADDRESS } from "./address";
 import web3 from "./web3";
 
+
 const Tx = require("ethereumjs-tx").Transaction;
-const BN = require("bignumber.js");
+// const BN = require("bignumber.js");
 
 const myContract = [
 	{
@@ -300,7 +301,7 @@ async function main() {
       SRC_TOKEN_ADDRESS,
       SRC_QTY_WEI,
       DST_TOKEN_ADDRESS,
-      USER_ADDRESS,
+      USER_ADDRESS, // destination address
       MAX_ALLOWANCE,
       results.slippageRate,
       REF_ADDRESS
@@ -319,7 +320,7 @@ async function main() {
       SRC_TOKEN_ADDRESS,
       SRC_QTY_WEI,
       DST_TOKEN_ADDRESS,
-      USER_ADDRESS,
+      USER_ADDRESS, // destination address
       MAX_ALLOWANCE,
       results.slippageRate,
       REF_ADDRESS
@@ -376,8 +377,8 @@ async function trade(
       walletId
     )
     .encodeABI();
-    console.log("txdata", txData)
-    let td = await contract.methods.executeSwap(
+  console.log("txdata", txData)
+  let td = await contract.methods.executeSwap(
       srcTokenAddress,
       srcQtyWei,
       dstTokenAddress,
