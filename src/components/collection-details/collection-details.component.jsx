@@ -35,6 +35,7 @@ class CollectionDetails extends React.Component {
   render() {
     const { name, imageUrl, price, token } = this.props.collectionItem;
     const { account } = this.state;
+    console.log("account",account)
     return (
       <div className="collection-detail">
         <div className="collection-image">
